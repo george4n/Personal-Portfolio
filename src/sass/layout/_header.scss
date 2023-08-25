@@ -1,0 +1,23 @@
+@import "../abstracts/variables";
+
+.header {
+    display: grid;
+    grid-template-columns: 5vw repeat(2, 1fr) 5vw;
+    height: 10rem;
+    align-items: center;
+    // background: $white-light;
+    color: $grey-dark;
+    overflow: hidden;
+    // justify-content: space-between;
+
+    &__logo {
+        font-size: 1rem;
+        font-weight: 700;
+        grid-column: 2 / 3;
+        justify-self: flex-start;
+
+        @media (max-width: 1000px) {
+            grid-column: 2 / 4;
+        }
+    }
+}

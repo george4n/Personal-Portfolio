@@ -1,0 +1,164 @@
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+// Variables
+
+$fs-hero-title: 5rem;
+$fw-hero-title: 400;
+$lh-hero-title: 1;
+
+$fs-hero-subtitle: 2.2rem;
+$fw-hero-subtitle: 2.5;
+$lh-hero-subtitle: 1.5;
+
+
+
+.hero {
+    &__title {
+        font: {
+            size: $fs-hero-title;
+            weight: $fw-hero-title;
+        }
+
+        line-height: $lh-hero-title;
+    }
+
+    &__subtitle {
+        font: {
+            size: $fs-hero-subtitle;
+            weight: $fw-hero-subtitle;
+        }
+
+        line-height: $lh-hero-subtitle;
+    }
+
+    &__text {
+        font: {
+            size: 2.2rem;
+            weight: 200;
+        }
+
+        line-height: 1.5;
+    }
+
+    &__nav-link {
+        text-decoration: none;
+
+        &:visited {
+            color: black;
+        }
+    }
+}
+
+.about {
+    &__heading {
+        font-size: 5rem;
+    }
+
+    &__text {
+        font-size: 2rem;
+        line-height: 1.5;
+        text-align: left;
+        font-weight: 300;
+
+        p:not(:last-child) {
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__quote {
+        display: block;
+
+        margin: {
+            top: 5rem;
+            bottom: 5rem;
+            left: 5rem;
+            right: 5rem;
+        }
+
+        font: {
+            weight: 300;
+            size: 3.5rem;
+        }
+
+        line-height: 2;
+        text-align: center;
+        position: relative;
+
+        &::before {
+            content: "\201C";
+            position: absolute;
+            top: -3rem;
+            left: -3rem;
+            transform: scale(4);
+        }
+
+        &::after {
+            content: "\201C";
+            position: absolute;
+            bottom: -10rem;
+            right: -3rem;
+            transform: scale(4);
+        }
+    }
+}
+
+.beyond {
+    &__heading {
+        font-size: 5rem;
+    }
+
+    &__text {
+        font-size: 2.5rem;
+        line-height: 1.5;
+        text-align: left;
+        font-weight: 300;
+        color: #1c1c1c;
+    }
+}
+
+.skills {
+    &__heading {
+        font-size: 5rem;
+    }
+
+    &__text {
+        font-size: 2.5rem;
+        line-height: 1.5;
+        text-align: left;
+    }
+}
+
+.portfolio {
+    &__heading {
+        font-size: 5rem;
+    }
+
+    &__text {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+}
+
+.resume {
+    &__heading {
+        font-size: 5rem;
+    }
+
+    &__text {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+}
+
+.contact {
+    &__heading {
+        font-size: 5rem;
+    }
+
+    &__text {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+}

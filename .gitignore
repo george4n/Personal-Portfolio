@@ -1,3 +1,4 @@
 Public/
 node_modules/
 **/.DS_Store
+*.code-workspace
