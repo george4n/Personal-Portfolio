@@ -12,7 +12,7 @@ Hello World! My name is George, a Front-end Developer & Experienced IT Professio
 
 ### Project Structure
 
-\```
+```
 .
 ├── src
 │   ├── assets
@@ -22,28 +22,28 @@ Hello World! My name is George, a Front-end Developer & Experienced IT Professio
     ├── css
     ├── assets
     └── index.html
-\```
+```
 
 ### Getting Started
 
 1. **Clone the repository**
 
-   \```bash
-   git clone https://github.com/[username]/personal-portfolio.git
-   cd personal-portfolio
-   \```
+```
+git clone https://github.com/[username]/personal-portfolio.git
+cd personal-portfolio
+```
 
 2. **Install the dependencies**
 
-   \```bash
-   npm install
-   \```
+```
+npm install
+```
 
 3. **Run the development server**
 
-   \```bash
-   npm start
-   \```
+```
+npm start
+```
 
 This will compile the SASS, copy assets and html files, and start a live-reload dev server using Browsersync.
 
@@ -51,9 +51,9 @@ This will compile the SASS, copy assets and html files, and start a live-reload 
 
 To build the project for production, use:
 
-\```bash
+```
 npm run build
-\```
+```
 
 This will compile and minimise the styles, autoprefix, and copy necessary files.
 
