@@ -6,16 +6,17 @@ html {
 }
 
 .section-heading {
-    font {
+    font: {
         size: 5rem;
     }
     @include font-size(map-get($typography, section-heading));
 }
 
 .section-text {
-    font {
-        size: 2.2rem;
+    font: {
+        size: 2.4rem;
     }
+
     @include font-size(map-get($typography, section-paragraph));
 }
 
@@ -66,10 +67,12 @@ html {
     }
 
     &__text {
-        // font-size: 2rem;
+        // font-size: 2.4rem;
         line-height: 1.5;
         text-align: left;
         font-weight: 300;
+
+        // @include font-size(map-get($typography, section-paragraph));
 
         p:not(:last-child) {
             margin-bottom: 5rem;
