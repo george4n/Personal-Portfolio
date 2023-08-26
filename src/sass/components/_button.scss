@@ -16,6 +16,12 @@
   border-radius: 0.8rem;
   cursor: pointer;
   backface-visibility: hidden;
+
+  text-decoration: none;
+
+  &:visited {
+    text-decoration: none;
+  }
 }
 
 .btn::before {

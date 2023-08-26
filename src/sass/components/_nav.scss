@@ -1,4 +1,4 @@
-@import "../abstracts/variables";
+@use "../abstracts/variables" as *;
 // Mobile Navigation
 
 .main-nav {
@@ -25,10 +25,10 @@
     &__link {
         cursor: pointer;
         text-decoration: none;
-        color: blue;
+        color: $grey-dark;
 
         &:visited {
-            color: $grey-dark
+            color: $grey-dark;
         }
     }
 }
