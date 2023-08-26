@@ -56,6 +56,20 @@ $typography: (
     $bp-s: $fs-base * 1.5,
     $bp-xs: $fs-base * 1.3
   ),
+  card-title: (
+    $bp-xl: $fs-base * 2.1,
+    $bp-l: $fs-base * 1.9,
+    $bp-m: $fs-base * 1.7,
+    $bp-s: $fs-base * 1.5,
+    $bp-xs: $fs-base * 1.3
+  ),
+  card-text: (
+    $bp-xl: $fs-base * 2.1,
+    $bp-l: $fs-base * 1.9,
+    $bp-m: $fs-base * 1.7,
+    $bp-s: $fs-base * 1.5,
+    $bp-xs: $fs-base * 1.3
+  ),
   // ... add more as needed, like "section-heading", "sub-title", etc.
 );
 

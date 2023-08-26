@@ -20,6 +20,11 @@ html {
     @include font-size(map-get($typography, section-paragraph));
 }
 
+.section-quote {
+    font-family: "Merriweather", serif;
+    // border: 1px solid red;
+}
+
 // Variables
 
 .hero {
@@ -96,23 +101,39 @@ html {
         text-align: center;
         position: relative;
 
-        &::before {
-            content: "\201C";
-            position: absolute;
-            top: -3rem;
-            left: -3rem;
-            transform: scale(4);
-        }
+        // &::before {
+        //     content: "\201C";
+        //     position: absolute;
+        //     top: -3rem;
+        //     left: -3rem;
+        //     transform: scale(4);
+        // }
 
-        &::after {
-            content: "\201C";
-            position: absolute;
-            bottom: -10rem;
-            right: -3rem;
-            transform: scale(4);
-        }
+        // &::after {
+        //     content: "\201C";
+        //     position: absolute;
+        //     bottom: -10rem;
+        //     right: -3rem;
+        //     transform: scale(4);
+        // }
 
         @include font-size(map-get($typography, section-quote));
+    }
+}
+
+.stack {
+    &__card-title {
+        font: {
+            size: 2.5rem;
+        }
+        @include font-size(map-get($typography, card-title));
+    }
+
+    &__card-text {
+        font: {
+            size: 1.5rem;
+        }
+        @include font-size(map-get($typography, section-text));
     }
 }
 

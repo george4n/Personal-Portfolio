@@ -1,0 +1,34 @@
+.stack {
+  &__card {
+    border: 1px solid grey;
+    padding: 3rem;
+    border-radius: 1rem;
+    display: grid;
+    gap: 2rem;
+
+    // place-content: center;
+    place-items: center;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__card-title {
+    padding-bottom: 1rem;
+  }
+
+  &__card-text {
+    align-self: start;
+  }
+
+  &__card-img-container {
+    display: flex;
+  }
+
+  &__card-img {
+    width: 10vw;
+    align-self: end;
+  }
+}

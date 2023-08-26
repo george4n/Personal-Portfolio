@@ -22,10 +22,10 @@
 @use "components/button";
 @use "components/card";
 @use "components/nav";
+@use "components/stack-card";
 
 // 6. Page-specific styles
 @use "pages/home";
 
 // 7. Themes
 @use "themes/default";
-

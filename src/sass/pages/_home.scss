@@ -5,6 +5,24 @@ section {
     padding: 5vh 5vw;
 }
 
+.hero,
+.about,
+.stack,
+.beyond,
+.contact {
+    @include respond-to(s) {
+        padding: {
+            left: 10vw;
+            right: 10vw;
+        }
+    }
+}
+
+.section-quote {
+    padding: 4rem 2rem;
+    background-color: hsl(0, 0%, 16.7%);
+}
+
 .hero {
     display: flex;
     gap: 5rem;
@@ -123,10 +141,6 @@ section {
         padding: 8rem 0;
         grid-column: 2 / 10;
         place-self: center;
-
-        @media (max-width: 1000px) {
-            padding: 2rem 0;
-        }
     }
 
     &__text {
@@ -135,6 +149,51 @@ section {
 
         place-items: center;
         display: block;
+    }
+}
+
+.stack {
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    align-items: center;
+    overflow: hidden;
+
+    &__heading {
+        padding: 8rem 0;
+        grid-column: 2 / 10;
+        place-self: center;
+
+        @media (max-width: 1000px) {
+            padding: 2rem 0;
+        }
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5rem;
+        padding: {
+            bottom: 8rem;
+        }
+
+        @include respond-to(l) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5rem;
+            padding: {
+                left: 2rem;
+                right: 2rem;
+            }
+        }
+
+        @include respond-to(s) {
+            // grid-template-columns: 1;
+            grid-template-columns: 1fr;
+            gap: 5rem;
+        }
     }
 }
 
