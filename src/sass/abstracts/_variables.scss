@@ -1,9 +1,130 @@
-// COLORS
+// 1. Base Variables
+$fs-base: 1rem;
 
-$grey-dark: #1C1C1C; 
-$white-light: #F1F1F1;
+// Breakpoints
+$bp-xl: 1500px;
+$bp-l: 1200px;
+$bp-m: 900px;
+$bp-s: 600px;
+$bp-xs: 300px;
 
+// Screen Breakpoints Map for Mixin
+$breakpoints: (
+  "xl": (
+    max-width: $bp-xl
+  ),
+  "l": (
+    max-width: $bp-l
+  ),
+  "m": (
+    max-width: $bp-m
+  ),
+  "s": (
+    max-width: $bp-s
+  ),
+  "xs": (
+    max-width: $bp-xs
+  )
+) !default;
+
+$typography: (
+  section-heading: (
+    $bp-xl: $fs-base * 5.5,
+    $bp-l: $fs-base * 5,
+    $bp-m: $fs-base * 4.5,
+    $bp-s: $fs-base * 3,
+    $bp-xs: $fs-base * 1.5
+  ),
+  hero: (
+    $bp-xl: $fs-base * 5.5,
+    $bp-l: $fs-base * 5,
+    $bp-m: $fs-base * 4.5,
+    $bp-s: $fs-base * 4,
+    $bp-xs: $fs-base * 3.5
+  ),
+  section-paragraph: (
+    $bp-xl: $fs-base * 2.4,
+    $bp-l: $fs-base * 2.3,
+    $bp-m: $fs-base * 2.2,
+    $bp-s: $fs-base * 2.1,
+    $bp-xs: $fs-base * 2
+  ),
+  section-quote: (
+    $bp-xl: $fs-base * 2.1,
+    $bp-l: $fs-base * 1.9,
+    $bp-m: $fs-base * 1.7,
+    $bp-s: $fs-base * 1.5,
+    $bp-xs: $fs-base * 1.3
+  ),
+  // ... add more as needed, like "section-heading", "sub-title", etc.
+);
+
+// // Font Sizes
+// $font-sizes: (
+//   $bp-xl: 2rem,
+//   $bp-l: 1.6rem,
+//   $bp-m: 1.2rem,
+//   $bp-s: 1rem,
+//   $bp-xs: 0.8rem
+// );
+
+// // Derived Variables
+// $fs-title-xl: $fs-title-base * 5.5;
+// $fs-title-l: $fs-title-base * 5;
+// $fs-title-m: $fs-title-base * 4.5;
+// $fs-title-s: $fs-title-base * 4;
+// $fs-title-xs: $fs-title-base * 3.5;
+
+// $fs-hero-title: (
+//   $bp-xl: $fs-title-xl,
+//   $bp-l: $fs-title-l,
+//   $bp-m: $fs-title-m,
+//   $bp-s: $fs-title-s,
+//   $bp-xs: $fs-title-xs
+// );
+
+// Colors
+
+$grey-dark: #1c1c1c;
+$white-light: #f1f1f1;
 
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
+
+//  Fonts
+
+$fs-default: 1rem;
+// $fs-hero-title: 5rem;
+$fs-hero-subtitle: 2.2rem;
+
+$fw-hero-title: 400;
+$fw-hero-subtitle: 2.5;
+
+$lh-deault: 1;
+$lh-hero-title: 1;
+$lh-hero-subtitle: 1.5;
+
+// Font Sizes
+
+$fs-100: 1rem;
+$fs-200: $fs-100 * 1.2;
+$fs-300: $fs-100 * 1.4;
+$fs-400: $fs-100 * 1.6;
+$fs-500: $fs-100 * 1.8;
+$fs-600: $fs-100 * 2;
+$fs-700: $fs-100 * 3;
+$fs-800: $fs-100 * 4;
+$fs-900: $fs-100 * 5;
+
+// Font Weights
+
+$fw-100: 100;
+$fw-200: 200;
+$fw-300: 300;
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
+$fw-800: 800;
+$fw-900: 900;

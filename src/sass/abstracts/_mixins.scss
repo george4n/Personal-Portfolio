@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as *;
+
+// Breakpoints Mixin
+// Map located in ../abstracts/variables
+
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+    + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+// Usage
+// @include respond-to('l') {
+//   color: blue;
+// }
+
+// This mixin is set up for a desktop-first approach using 'max-width'.
+// To reverse it for a mobile-first approach:
+// 1. Change the base style in the $fs-map to represent mobile (smallest screen) sizes.
+// 2. Replace 'max-width' with 'min-width' in the media query.
+// 3. Order the breakpoints in the $fs-map from smallest to largest.
+
+// $p-font-sizes: (
+//   // Base style for desktop screens
+//   null: 19px,
+//   1024px: 17px,
+//   640px: 16px,
+//   480px: 15px
+// );
+
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    } @else {
+      @media screen and (max-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
+
+// Usage
+
+// p {
+//   @include font-size($p-font-sizes);
+// }

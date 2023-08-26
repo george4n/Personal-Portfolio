@@ -12,21 +12,10 @@ html {
     scroll-behavior: smooth;
 }
 
-// body {
-//     box-sizing: border-box;
-// }
+body {
+    box-sizing: border-box;
+}
 
 * {
     // border: 1px dashed red;
 }
-
-/* Outline to visualize margin */
-// * {
-//     outline: 1px dashed red;
-//     outline-offset: -1px;  /* Makes the outline hug the element, simulating margin */
-// }
-
-// /* Border to visualize actual borders */
-// * {
-//     border: 1px solid blue;
-// }

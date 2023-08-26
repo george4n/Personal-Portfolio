@@ -1,4 +1,5 @@
-@import "../abstracts/variables";
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 section {
     padding: 5vh 5vw;
@@ -6,27 +7,20 @@ section {
 
 .hero {
     display: flex;
-    flex-direction: row;
     gap: 5rem;
     align-items: center;
 
-    min-height: 100vh;
-
-    @media (max-width: 1000px) {
+    @include respond-to(m) {
         grid-template-columns: 5vw 1fr 5vw;
     }
 
-    &__text-container {
+    &__container {
         grid-column: 2 / 3;
-
         height: 100%;
         display: flex;
         gap: 5rem;
         flex-direction: column;
-        flex-grow: 1;
         justify-content: space-around;
-
-        padding: 0 4rem;
     }
 
     &__title {
@@ -92,7 +86,7 @@ section {
 
     &__splash {
         width: 100%;
-        max-width: 60rem;
+        max-width: 40vw;
 
         grid-column: 3 / 4;
         grid-row: 1 / -1;
