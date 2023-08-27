@@ -25,43 +25,60 @@ section {
 
 .hero {
     display: flex;
-    gap: 5rem;
     align-items: center;
+    gap: 5rem;
 
-    @include respond-to(m) {
-        grid-template-columns: 5vw 1fr 5vw;
+    &__container,
+    &__splash {
+        flex: 1;
     }
 
     &__container {
-        grid-column: 2 / 3;
         height: 100%;
         display: flex;
-        gap: 5rem;
         flex-direction: column;
         justify-content: space-around;
+        gap: 5rem;
     }
 
     &__title {
-        padding-bottom: 1rem;
-        margin: 0;
         display: block;
+        margin: 0;
+        padding-bottom: 1rem;
 
         .blur {
             position: relative;
-            z-index: 2; // Position the sharp text on top
+            z-index: 2; // Position sharp text on top
             transition: all 0.4s;
 
-            &:hover::before {
-                -webkit-filter: blur(50px);
-                filter: blur(50px);
-                // text-transform: ;
+            &::before {
+                // Pseudo-element for blurred background
+                content: attr(data-text);
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1; // Blurred text behind
+
+                background: linear-gradient(-45deg, $hero-gradient-start 0%, $hero-gradient-end 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+
+                -webkit-filter: blur($blur-normal-filter);
+                filter: blur($blur-normal-filter);
+                transition: all 0.5s;
             }
 
             &:hover {
-                background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
-                -webkit-background-clip: text; // For Webkit browsers like Safari
+                background: linear-gradient(-45deg, $hero-gradient-start, $hero-gradient-end);
+                -webkit-background-clip: text;
                 background-clip: text;
                 color: transparent;
+
+                &::before {
+                    -webkit-filter: blur($blur-hover-filter);
+                    filter: blur($blur-hover-filter);
+                }
             }
         }
 
@@ -72,46 +89,22 @@ section {
         &__text {
             font-size: 1.5rem;
         }
-
-        // Pseudo-element for blurred background
-        .blur::before {
-            content: attr(data-text); // Use a data attribute for the duplicated text
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1; // Position the blurred text behind
-
-            background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-
-            -webkit-filter: blur(30px);
-
-            filter: blur(30px);
-            transition: all 0.5s;
-        }
     }
 
     &__btn {
-        font: {
-            size: 2rem;
-        }
-        margin: {
-            top: 6rem;
-        }
+        font-size: 2rem;
+        margin-top: 6rem;
     }
 
     &__splash {
-        width: 100%;
+        // width: 100%;
         max-width: 40vw;
-
-        grid-column: 3 / 4;
-        grid-row: 1 / -1;
+        max-height: 70vh;
+        aspect-ratio: 1 / 1;
         display: block;
         place-self: center;
-
         transition: all 0.2s;
+        display: block;
 
         @media (max-width: 1000px) {
             display: none;
@@ -120,6 +113,10 @@ section {
         &:hover {
             transform: scale(1.005);
         }
+    }
+
+    @include respond-to(m) {
+        grid-template-columns: 5vw 1fr 5vw;
     }
 }
 

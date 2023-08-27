@@ -2,14 +2,26 @@
 $fs-base: 1rem;
 
 // Breakpoints
-$bp-xl: 1500px;
-$bp-l: 1200px;
-$bp-m: 900px;
-$bp-s: 600px;
-$bp-xs: 300px;
+$bp-4k: 400em;
+$bp-xxxl: 300em;
+$bp-xxl: 200em;
+$bp-xl: 150em;
+$bp-l: 120em;
+$bp-m: 90em;
+$bp-s: 60em;
+$bp-xs: 30em;
 
-// Screen Breakpoints Map for Mixin
+// Updated breakpoints map
 $breakpoints: (
+  "4k": (
+    max-width: $bp-4k
+  ),
+  "xxxl": (
+    max-width: $bp-xxxl
+  ),
+  "xxl": (
+    max-width: $bp-xxl
+  ),
   "xl": (
     max-width: $bp-xl
   ),
@@ -27,8 +39,12 @@ $breakpoints: (
   )
 ) !default;
 
+// Updated typography map
 $typography: (
   section-heading: (
+    $bp-4k: $fs-base * 7,
+    $bp-xxxl: $fs-base * 6.5,
+    $bp-xxl: $fs-base * 6,
     $bp-xl: $fs-base * 5.5,
     $bp-l: $fs-base * 5,
     $bp-m: $fs-base * 4.5,
@@ -36,13 +52,19 @@ $typography: (
     $bp-xs: $fs-base * 1.5
   ),
   hero: (
-    $bp-xl: $fs-base * 5.5,
+    $bp-4k: $fs-base * 10,
+    $bp-xxxl: $fs-base * 8,
+    $bp-xxl: $fs-base * 7,
+    $bp-xl: $fs-base * 6,
     $bp-l: $fs-base * 5,
     $bp-m: $fs-base * 4.5,
     $bp-s: $fs-base * 4,
     $bp-xs: $fs-base * 3.5
   ),
   section-paragraph: (
+    $bp-4k: $fs-base * 4,
+    $bp-xxxl: $fs-base * 4,
+    $bp-xxl: $fs-base * 2.5,
     $bp-xl: $fs-base * 2.4,
     $bp-l: $fs-base * 2.3,
     $bp-m: $fs-base * 2.2,
@@ -50,6 +72,9 @@ $typography: (
     $bp-xs: $fs-base * 2
   ),
   section-quote: (
+    $bp-4k: $fs-base * 2.4,
+    $bp-xxxl: $fs-base * 2.3,
+    $bp-xxl: $fs-base * 2.2,
     $bp-xl: $fs-base * 2.1,
     $bp-l: $fs-base * 1.9,
     $bp-m: $fs-base * 1.7,
@@ -57,6 +82,9 @@ $typography: (
     $bp-xs: $fs-base * 1.3
   ),
   card-title: (
+    $bp-4k: $fs-base * 2.4,
+    $bp-xxxl: $fs-base * 2.3,
+    $bp-xxl: $fs-base * 2.2,
     $bp-xl: $fs-base * 2.1,
     $bp-l: $fs-base * 1.9,
     $bp-m: $fs-base * 1.7,
@@ -64,38 +92,16 @@ $typography: (
     $bp-xs: $fs-base * 1.3
   ),
   card-text: (
+    $bp-4k: $fs-base * 2.4,
+    $bp-xxxl: $fs-base * 2.3,
+    $bp-xxl: $fs-base * 2.2,
     $bp-xl: $fs-base * 2.1,
     $bp-l: $fs-base * 1.9,
     $bp-m: $fs-base * 1.7,
     $bp-s: $fs-base * 1.5,
     $bp-xs: $fs-base * 1.3
-  ),
-  // ... add more as needed, like "section-heading", "sub-title", etc.
+  )
 );
-
-// // Font Sizes
-// $font-sizes: (
-//   $bp-xl: 2rem,
-//   $bp-l: 1.6rem,
-//   $bp-m: 1.2rem,
-//   $bp-s: 1rem,
-//   $bp-xs: 0.8rem
-// );
-
-// // Derived Variables
-// $fs-title-xl: $fs-title-base * 5.5;
-// $fs-title-l: $fs-title-base * 5;
-// $fs-title-m: $fs-title-base * 4.5;
-// $fs-title-s: $fs-title-base * 4;
-// $fs-title-xs: $fs-title-base * 3.5;
-
-// $fs-hero-title: (
-//   $bp-xl: $fs-title-xl,
-//   $bp-l: $fs-title-l,
-//   $bp-m: $fs-title-m,
-//   $bp-s: $fs-title-s,
-//   $bp-xs: $fs-title-xs
-// );
 
 // Colors
 
@@ -106,10 +112,14 @@ $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 
+$hero-gradient-start: #e81cff;
+$hero-gradient-end: #40c9ff;
+$blur-hover-filter: 50px;
+$blur-normal-filter: 30px;
+
 //  Fonts
 
 $fs-default: 1rem;
-// $fs-hero-title: 5rem;
 $fs-hero-subtitle: 2.2rem;
 
 $fw-hero-title: 400;
