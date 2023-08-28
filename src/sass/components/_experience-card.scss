@@ -5,7 +5,7 @@
   margin: 4rem 0rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   position: relative;
 
   &::before {
@@ -28,15 +28,15 @@
     font-size: $fs-500;
     font-weight: $fw-400;
     font: {
-      size: 4rem;
+      size: 6rem;
     }
 
-    @include font-size(map-get($typography, experience-p));
+    @include font-size(map-get($typography, experience-title));
   }
 
   &__company {
     font-size: $fs-200;
-    font-weight: $fw-300;
+    font-weight: $fw-400;
     font: {
       size: 4rem;
     }
@@ -46,10 +46,10 @@
 
   &__daterange {
     font-size: $fs-200;
-    font-weight: $fw-100;
+    font-weight: $fw-300;
 
     font: {
-      size: 4rem;
+      size: 6rem;
     }
 
     @include font-size(map-get($typography, experience-p));
@@ -57,25 +57,48 @@
 
   &__location {
     font-size: $fs-200;
-    font-weight: $fw-100;
+    font-weight: $fw-300;
 
     font: {
       size: 4rem;
     }
 
-    @include font-size(map-get($typography, experience-p));
+    @include font-size(map-get($typography, experience-subtitle));
   }
 
   &__technologies {
   }
 
+  &__desc {
+    padding: {
+      top: 1rem;
+      left: 2rem;
+    }
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 0.1rem;
+      height: 100%;
+      background-color: $white-light;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
   &__item {
     list-style: none;
-    line-height: 2;
+    line-height: 2.2;
+
     font: {
       size: 4rem;
     }
 
     @include font-size(map-get($typography, experience-p));
+
+    &:not(:last-child) {
+      padding-bottom: 1rem;
+    }
   }
 }

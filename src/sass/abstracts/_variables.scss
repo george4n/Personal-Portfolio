@@ -49,7 +49,7 @@ $typography: (
     $bp-l: $fs-base * 5,
     $bp-m: $fs-base * 4.5,
     $bp-s: $fs-base * 3,
-    $bp-xs: $fs-base * 1.5
+    $bp-xs: $fs-base * 2.5
   ),
   hero: (
     $bp-4k: $fs-base * 10,
@@ -110,6 +110,26 @@ $typography: (
     $bp-m: $fs-base * 1.7,
     $bp-s: $fs-base * 1.6,
     $bp-xs: $fs-base * 1.5
+  ),
+  experience-title: (
+    $bp-4k: $fs-base * 6,
+    $bp-xxxl: $fs-base * 5,
+    $bp-xxl: $fs-base * 4,
+    $bp-xl: $fs-base * 3,
+    $bp-l: $fs-base * 3,
+    $bp-m: $fs-base * 3,
+    $bp-s: $fs-base * 2.6,
+    $bp-xs: $fs-base * 2.5
+  ),
+  experience-subtitle: (
+    $bp-4k: $fs-base * 4,
+    $bp-xxxl: $fs-base * 2,
+    $bp-xxl: $fs-base * 4,
+    $bp-xl: $fs-base * 2,
+    $bp-l: $fs-base * 2,
+    $bp-m: $fs-base * 2,
+    $bp-s: $fs-base * 2.2,
+    $bp-xs: $fs-base * 2
   )
 );
 
