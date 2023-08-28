@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as *;
+
+.back-to-top {
+  transform: rotate(-90deg) scale(1.5);
+  padding: 1rem;
+  transition: all 0.2s;
+  backface-visibility: hidden;
+
+  &--dark-mode {
+    fill: $white-light;
+  }
+
+  &:hover {
+    transform: rotate(-90deg) scale(1.6) translatex(0.2rem);
+  }
+}

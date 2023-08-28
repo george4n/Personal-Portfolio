@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>George Neophytou</title>
+    <title>George Neophytou - Frontend Developer</title>
     <meta name="description"
         content="George Neophytou, a Front-end Developer and IT Professional from Paphos, Cyprus, transforms designs into interactive experiences with over 10 years of expertise.">
     <link rel="stylesheet" href="css/style.css">
@@ -20,10 +20,10 @@
     gtag('config', 'G-W8DR76S8ZS');
 </script>
 
-
 <body>
     <!-- Header -->
     <header class="header">
+
         <div class="header__logo">
             <h2 class="header__heading">George Neophytou - Portfolio</h2>
         </div>
@@ -31,9 +31,6 @@
         <!-- Desktop Navigation -->
         <nav class="main-nav">
             <ul class="main-nav__list">
-                <li class="main-nav__item">
-                    <a href="" class="main-nav__link">Home</a>
-                </li>
                 <li class="main-nav__item">
                     <a href="#about" class="main-nav__link">About</a>
                 </li>
@@ -48,15 +45,18 @@
                 </li>
             </ul>
         </nav>
+        <!-- Desktop Navigation End -->
 
     </header>
+    <!-- Header End -->
 
-    <!-- MAIN -->
+    <!-- Main -->
     <main>
 
         <section class="hero">
             <div class="hero__container">
-                <h1 class="hero__title">Hello World! ​<br>My name is <b class="blur" data-text="George">George</b>.</h1>
+                <h1 class="hero__title">Hello World! ​<br>My name is <strong class="blur"
+                        data-text="George">George</strong>.</h1>
                 <p class="hero__subtitle">I'm a Front-end Developer & Experienced IT Professional based in
                     Paphos, Cyprus.</p>
                 <p class="hero__text">I transform designs into interactive experiences with over a decade of IT
@@ -64,9 +64,7 @@
 
                 <a class="hero__btn btn" href="#contact">Contact Me</a>
             </div>
-            <div class="hero__splash">
-                <img class="hero__splash" src="assets/img/dream_machine.png" alt="Test">
-            </div>
+            <img class="hero__splash" src="assets/img/dream_machine.png" alt="Test">
         </section>
 
         <section id="about" class="about">
@@ -83,8 +81,14 @@
             </div>
             <p class="about__quote section-quote">"Functionality meets aesthetics. A website should not just look good,
                 but feel
-                amazing to navigate, free of hindrance. Above all, accessibility is paramount."</p>
-
+                amazing to navigate, free of hindrance. Above all, accessibility is paramount."
+            </p>
+            <a href="#" class="back-to-top back-to-top--dark-mode" aria-label="back to top of page">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                    <path
+                        d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zM8.711 4.3l5.7 5.766L8.7 15.711l-1.4-1.422 4.289-4.242-4.3-4.347z" />
+                </svg>
+            </a>
         </section>
 
         <section id="stack" class="stack">
@@ -192,6 +196,13 @@
 
                 </div>
             </div>
+
+            <a href="#" class="back-to-top" aria-label="back to top of page">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                    <path
+                        d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zM8.711 4.3l5.7 5.766L8.7 15.711l-1.4-1.422 4.289-4.242-4.3-4.347z" />
+                </svg>
+            </a>
         </section>
 
         <section id="beyond" class="beyond">
@@ -208,6 +219,12 @@
                 among others.
                 But I'm always eager to expand my horizons. In the coming years, I'm keen on delving deeper into the
                 intricacies of backend development.</p>
+            <a href="#" class="back-to-top" aria-label="back to top of page">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                    <path
+                        d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zM8.711 4.3l5.7 5.766L8.7 15.711l-1.4-1.422 4.289-4.242-4.3-4.347z" />
+                </svg>
+            </a>
         </section>
 
 
@@ -230,7 +247,7 @@
             <form class="contact-form" action="https://formspree.io/f/myyqwoyw" method="POST">
 
                 <label class="contact-form__label">
-                    <input class="contact-form__input" type="name" name="name" placeholder="Your Name">
+                    <input class="contact-form__input" type="text" name="name" placeholder="Your Name">
                 </label>
 
                 <label class="contact-form__label">
@@ -242,15 +259,24 @@
                 </label>
                 <button class="btn hero__btn" type="submit">Send</button>
             </form>
-
+            <a href="#" class="back-to-top" aria-label="back to top of page">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                    <path
+                        d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zM8.711 4.3l5.7 5.766L8.7 15.711l-1.4-1.422 4.289-4.242-4.3-4.347z" />
+                </svg>
+            </a>
         </section>
 
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <p class="footer__text">&copy; 2023 - George Neophytou - Version 1.0.1</p>
     </footer>
+    <!-- Footer End -->
 
 </body>
+
 <script
     type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "fcdc06a6-0eb4-4232-88c1-da7fd6c35f14"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
 
