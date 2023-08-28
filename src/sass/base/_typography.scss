@@ -163,25 +163,13 @@ html {
     }
 }
 
-.portfolio {
+.experience {
     &__heading {
-        font-size: 5rem;
     }
 
     &__text {
-        font-size: 2rem;
         line-height: 1.5;
-    }
-}
-
-.resume {
-    &__heading {
-        font-size: 5rem;
-    }
-
-    &__text {
-        font-size: 2rem;
-        line-height: 1.5;
+        text-align: left;
     }
 }
 

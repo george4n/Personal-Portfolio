@@ -100,6 +100,16 @@ $typography: (
     $bp-m: $fs-base * 1.7,
     $bp-s: $fs-base * 1.5,
     $bp-xs: $fs-base * 1.3
+  ),
+  experience-p: (
+    $bp-4k: $fs-base * 4,
+    $bp-xxxl: $fs-base * 3,
+    $bp-xxl: $fs-base * 2,
+    $bp-xl: $fs-base * 1.9,
+    $bp-l: $fs-base * 1.8,
+    $bp-m: $fs-base * 1.7,
+    $bp-s: $fs-base * 1.6,
+    $bp-xs: $fs-base * 1.5
   )
 );
 

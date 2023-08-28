@@ -1,0 +1,81 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.experience-card {
+  margin: 4rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 0.1rem;
+    height: 100%;
+    background-color: $white-light;
+    position: absolute;
+    top: 0;
+    left: -2rem;
+  }
+
+  &__logo {
+    width: 15rem;
+    height: 100%;
+    padding: 1rem 0;
+  }
+
+  &__title {
+    font-size: $fs-500;
+    font-weight: $fw-400;
+    font: {
+      size: 4rem;
+    }
+
+    @include font-size(map-get($typography, experience-p));
+  }
+
+  &__company {
+    font-size: $fs-200;
+    font-weight: $fw-300;
+    font: {
+      size: 4rem;
+    }
+
+    @include font-size(map-get($typography, experience-p));
+  }
+
+  &__daterange {
+    font-size: $fs-200;
+    font-weight: $fw-100;
+
+    font: {
+      size: 4rem;
+    }
+
+    @include font-size(map-get($typography, experience-p));
+  }
+
+  &__location {
+    font-size: $fs-200;
+    font-weight: $fw-100;
+
+    font: {
+      size: 4rem;
+    }
+
+    @include font-size(map-get($typography, experience-p));
+  }
+
+  &__technologies {
+  }
+
+  &__item {
+    list-style: none;
+    line-height: 2;
+    font: {
+      size: 4rem;
+    }
+
+    @include font-size(map-get($typography, experience-p));
+  }
+}
