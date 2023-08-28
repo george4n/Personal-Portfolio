@@ -166,7 +166,7 @@ section {
             bottom: 8rem;
         }
 
-        @include respond-to(l) {
+        @include respond-to(m) {
             grid-template-columns: repeat(2, 1fr);
             gap: 5rem;
             padding: {

@@ -1,17 +1,41 @@
+@use "../abstracts/variables" as *;
+
 .stack {
   &__card {
-    border: 1px solid grey;
+    // border: 1px solid grey;
     padding: 3rem;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     display: grid;
     gap: 2rem;
 
     // place-content: center;
     place-items: center;
-    transition: all 0.2s;
+    transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    // transition: color 0.1s;
+    position: relative;
+    background-color: $white-light;
+    color: $grey-dark;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100% + 1rem);
+      height: calc(100% + 1rem);
+      top: -0.5rem;
+      left: -0.5rem;
+      border-radius: 2rem;
+      background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+      z-index: -10;
+      pointer-events: none;
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.02);
+      color: $white-light;
+
+      &__card-img {
+      }
     }
   }
 
@@ -21,6 +45,7 @@
 
   &__card-text {
     align-self: start;
+    line-height: 1.5;
   }
 
   &__card-img-container {
