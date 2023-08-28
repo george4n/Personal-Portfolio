@@ -1,10 +1,11 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 // Mobile Navigation
 
 .main-nav {
     justify-self: end;
 
-    @media (max-width: 1000px) {
+    @include respond-to(s) {
         display: none;
     }
     &__list {
