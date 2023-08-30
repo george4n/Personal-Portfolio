@@ -98,8 +98,6 @@ section {
 
     &__splash {
         max-width: 40vw;
-        // max-height: 70vh;
-        // aspect-ratio: 1 / 1;
         display: block;
         place-self: center;
         transition: all 0.2s;
@@ -274,4 +272,15 @@ section {
         height: 100%;
         object-fit: cover;
     }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }

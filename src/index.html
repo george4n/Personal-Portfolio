@@ -30,7 +30,7 @@
 
 
         <!-- Desktop Navigation -->
-        <nav class="main-nav">
+        <nav class="main-nav" role="navigation">
             <ul class="main-nav__list">
                 <li class="main-nav__item">
                     <a href="#about" class="main-nav__link">About</a>
@@ -69,11 +69,11 @@
 
                 <a class="hero__btn btn" href="#contact">Contact Me</a>
             </div>
-            <img class="hero__splash" src="assets/img/dream_machine.png" alt="Test">
+            <img class="hero__splash" src="assets/img/dream_machine.png" alt="Coder sitting at his computer">
         </section>
 
-        <section id="about" class="about">
-            <h3 class="about__heading section-heading">My Journey in Tech</h3>
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <h3 id="about-heading" class="about__heading section-heading">My Journey in Tech</h3>
             <div class="about__text section-text">
                 <p>
                     Hello, I'm George, a front-end developer with over 10 years in IT management. I approach web
@@ -88,7 +88,7 @@
                 but feel
                 amazing to navigate, free of hindrance. Above all, accessibility is paramount."
             </p> -->
-            <a href="#" class="back-to-top back-to-top--dark-mode" aria-label="back to top of page">
+            <a href="#" class="back-to-top back-to-top--dark-mode" aria-label="back to top of page" role="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                     <path
                         d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zM8.711 4.3l5.7 5.766L8.7 15.711l-1.4-1.422 4.289-4.242-4.3-4.347z" />
@@ -96,8 +96,8 @@
             </a>
         </section>
 
-        <section id="stack" class="stack">
-            <h3 class="stack__heading section-heading">My Tech Stack</h3>
+        <section id="stack" class="stack" aria-labelledby="stack-heading">
+            <h3 id="stack-heading" class="stack__heading section-heading">My Tech Stack</h3>
             <p class="stack__text section-text">
                 Navigating the dynamic world of web development, I’ve refined my toolset to combine both power and
                 efficiency. Here's a snapshot of the technologies and tools I rely on to bring digital projects to life:
@@ -172,7 +172,7 @@
                         developers.
                     </p>
 
-                    <img src="assets/img/github-480.png" alt="React Logo" class="stack__card-img">
+                    <img src="assets/img/github-480.png" alt="Git Logo" class="stack__card-img">
 
                 </div>
 
@@ -185,7 +185,7 @@
                         ensuring that every project utilizes the latest tools and libraries efficiently.
                     </p>
 
-                    <img src="assets/img/npm-480.png" alt="React Logo" class="stack__card-img">
+                    <img src="assets/img/npm-480.png" alt="NPM Logo" class="stack__card-img">
 
                 </div>
                 <div class="stack__card">
@@ -197,12 +197,12 @@
                         seamlessly, benefiting from continuous integration, automatic SSL, and global CDN distribution.
                     </p>
 
-                    <img src="assets/img/netlify-96.png" alt="React Logo" class="stack__card-img">
+                    <img src="assets/img/netlify-96.png" alt="Netlify Logo" class="stack__card-img">
 
                 </div>
             </div>
 
-            <a href="#" class="back-to-top" aria-label="back to top of page">
+            <a href="#" class="back-to-top" aria-label="back to top of page" role="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                     <path
                         d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zM8.711 4.3l5.7 5.766L8.7 15.711l-1.4-1.422 4.289-4.242-4.3-4.347z" />
@@ -210,8 +210,8 @@
             </a>
         </section>
 
-        <section class="experience" id="experience">
-            <h3 class="experience__heading section-heading">Relevant Experience</h3>
+        <section class="experience" id="experience" aria-labelledby="experience-heading">
+            <h3 id="experience-heading" class="experience__heading section-heading">Relevant Experience</h3>
 
             <div class="experience__container">
                 <!-- Experience Card -->
@@ -339,7 +339,7 @@
 
             </div>
 
-            <a href="#" class="back-to-top" aria-label="back to top of page">
+            <a href="#" class="back-to-top" aria-label="back to top of page" role="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                     <path
                         d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zM8.711 4.3l5.7 5.766L8.7 15.711l-1.4-1.422 4.289-4.242-4.3-4.347z" />
@@ -361,7 +361,7 @@
                 among others.
                 But I'm always eager to expand my horizons. In the coming years, I'm keen on delving deeper into the
                 intricacies of backend development.</p>
-            <a href="#" class="back-to-top" aria-label="back to top of page">
+            <a href="#" class="back-to-top" aria-label="back to top of page" role="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                     <path
                         d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zM8.711 4.3l5.7 5.766L8.7 15.711l-1.4-1.422 4.289-4.242-4.3-4.347z" />
@@ -372,8 +372,8 @@
 
 
 
-        <section id="contact" class="contact">
-            <h3 class="contact__heading section-heading">Let's Connect!</h3>
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <h3 id="contact-heading" class="contact__heading section-heading">Let's Connect!</h3>
 
 
             <p class="contact__text">
@@ -383,30 +383,36 @@
             </p>
 
             <div class="contact__social">
-                <a href="https://www.linkedin.com/in/george-neophytou/" class="contact__social-link" target="_blank">
+                <a href="https://www.linkedin.com/in/george-neophytou/" class="contact__social-link" target="_blank"
+                    aria-label="Visit my LinkedIn profile">
                     <img src="assets/img/linkedin-480.png" alt="Linkedin Logo" class="contact__social-img">
                 </a>
-                <a href="https://github.com/george4n" class="contact__social-link" target="_blank">
+                <a href="https://github.com/george4n" class="contact__social-link" target="_blank"
+                    aria-label="Visit my Github profile">
                     <img src="assets/img/github-480.png" alt="Github Logo" class="contact__social-img">
                 </a>
             </div>
 
             <form class="contact-form" action="https://formspree.io/f/myyqwoyw" method="POST" disabled>
 
-                <label class="contact-form__label">
-                    <input class="contact-form__input" type="text" name="name" placeholder="Your Name">
-                </label>
+                <label for="name" class="contact-form__label sr-only">Your Name</label>
+                <input class="contact-form__input" id="name" type="text" name="name" placeholder="Your Name"
+                    aria-label="Your Name" role="textbox">
 
-                <label class="contact-form__label">
-                    <input class="contact-form__input" type="email" name="email" placeholder="Your Email">
-                </label>
 
-                <label class="contact-form__label">
-                    <textarea class="contact-form__text" name="message" placeholder="Your Message"></textarea>
-                </label>
-                <button class="btn hero__btn" type="submit">Send</button>
+                <label for="email" class="contact-form__label sr-only">Your Email</label>
+                <!-- Your Email -->
+                <input class="contact-form__input" id="email" type="email" name="email" placeholder="Your Email"
+                    aria-label="Your Email" role="textbox">
+
+
+                <label for="message" class="contact-form__label sr-only">Your Message</label>
+                <textarea class="contact-form__text" id="message" name="message" placeholder="Your Message"
+                    aria-label="Your Message"></textarea>
+
+                <button class="btn hero__btn" type="submit" aria-label="Submit" role="button">Send</button>
             </form>
-            <a href="#" class="back-to-top" aria-label="back to top of page">
+            <a href="#" class="back-to-top" aria-label="back to top of page" role="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                     <path
                         d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zM8.711 4.3l5.7 5.766L8.7 15.711l-1.4-1.422 4.289-4.242-4.3-4.347z" />
@@ -417,7 +423,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <small class="footer__text">&copy; 2023 - George Neophytou - Version 1.0.1</small>
     </footer>
     <!-- Footer End -->
