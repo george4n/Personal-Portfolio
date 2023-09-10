@@ -27,6 +27,7 @@ section {
     display: flex;
     align-items: center;
     gap: 5rem;
+    min-height: 100vh;
 
     &__container,
     &__splash {
@@ -97,7 +98,7 @@ section {
     }
 
     &__splash {
-        max-width: 40vw;
+        max-width: 30vw;
         display: block;
         place-self: center;
         transition: all 0.2s;
