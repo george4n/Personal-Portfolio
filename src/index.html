@@ -25,7 +25,7 @@
     <header class="header">
 
 
-        <img class="header__logo" src="assets/img/code-512.png" alt="Code Logo">
+        <img class="header__logo" src="assets/img/code-512.png" alt="Code Logo" width="100" height="100">
 
 
 
@@ -69,7 +69,19 @@
 
                 <a class="hero__btn btn" href="#contact">Contact Me</a>
             </div>
-            <img class="hero__splash" src="assets/img/dream_machine.png" alt="Coder sitting at his computer">
+
+            <picture class="hero__splash">
+                <img class="hero__splash" sizes="(max-width: 2667px) 100vw, 2667px" srcset="
+                  assets/img/dream_machine_srcset/dream_machine_320.png 320w,
+                  assets/img/dream_machine_srcset/dream_machine_961.png 961w,
+                  assets/img/dream_machine_srcset/dream_machine_1411.png 1411w,
+                  assets/img/dream_machine_srcset/dream_machine_1790.png 1790w,
+                  assets/img/dream_machine_srcset/dream_machine_2667.png 2667w"
+                    src="assets/img/dream_machine_srcset/dream_machine_2667.png" alt="Coder sitting at his computer">
+            </picture>
+
+
+            <!-- <img class="hero__splash" src="assets/img/dream_machine.png" alt="Coder sitting at his computer"> -->
         </section>
 
         <section id="about" class="about" aria-labelledby="about-heading">
@@ -112,7 +124,8 @@
                         organized, accessible, and ready to be styled.
                     </p>
 
-                    <img src="assets/img/html-480.png" alt="HTML Logo" class="stack__card-img">
+                    <img class="stack__card-img" src="assets/img/html-480.png" alt="HTML Logo" class="stack__card-img"
+                        width="150" height="150">
 
                 </div>
                 <div class="stack__card">
@@ -124,7 +137,8 @@
                         responsive, visually engaging, and on-brand.
                     </p>
 
-                    <img src="assets/img/css-480.png" alt="CSS Logo" class="stack__card-img">
+                    <img class="stack__card-img" src="assets/img/css-480.png" alt="CSS Logo" class="stack__card-img"
+                        width="150" height="150">
 
                 </div>
                 <div class="stack__card">
@@ -136,7 +150,8 @@
                         experiences.
                     </p>
 
-                    <img src="assets/img/javascript-480.png" alt="JavaScript Logo" class="stack__card-img">
+                    <img class="stack__card-img" src="assets/img/javascript-480.png" alt="JavaScript Logo"
+                        class="stack__card-img" width="150" height="150">
 
                 </div>
                 <div class="stack__card">
@@ -147,7 +162,8 @@
                         My go-to CSS preprocessor. It allows me to write clean, reusable, and organized styles.
                     </p>
 
-                    <img src="assets/img/sass-480.png" alt="SASS Logo" class="stack__card-img">
+                    <img class="stack__card-img" src="assets/img/sass-480.png" alt="SASS Logo" class="stack__card-img"
+                        width="150" height="150">
 
                 </div>
                 <div class="stack__card">
@@ -159,7 +175,8 @@
                         interfaces.
                     </p>
 
-                    <img src="assets/img/react-480.png" alt="React Logo" class="stack__card-img">
+                    <img class="stack__card-img" src="assets/img/react-480.png" alt="React Logo" class="stack__card-img"
+                        width="150" height="150">
 
                 </div>
 
@@ -172,7 +189,8 @@
                         developers.
                     </p>
 
-                    <img src="assets/img/github-480.png" alt="Git Logo" class="stack__card-img">
+                    <img class="stack__card-img" src="assets/img/github-480.png" alt="Git Logo" class="stack__card-img"
+                        width="150" height="150">
 
                 </div>
 
@@ -185,7 +203,8 @@
                         ensuring that every project utilizes the latest tools and libraries efficiently.
                     </p>
 
-                    <img src="assets/img/npm-480.png" alt="NPM Logo" class="stack__card-img">
+                    <img class="stack__card-img" src="assets/img/npm-480.png" alt="NPM Logo" class="stack__card-img"
+                        width="150" height="150">
 
                 </div>
                 <div class="stack__card">
@@ -197,7 +216,8 @@
                         seamlessly, benefiting from continuous integration, automatic SSL, and global CDN distribution.
                     </p>
 
-                    <img src="assets/img/netlify-96.png" alt="Netlify Logo" class="stack__card-img">
+                    <img class="stack__card-img" src="assets/img/netlify-96.png" alt="Netlify Logo"
+                        class="stack__card-img" width="150" height="150">
 
                 </div>
             </div>
@@ -219,9 +239,11 @@
 
 
                     <div class="experience-card__overview">
+
                         <div class="experience-card__job-details">
                             <img src="assets/img/televinken-logo.png" alt="Televinken Company Logo"
                                 class="experience-card__logo">
+
                             <h4 class="experience-card__title">IT Manager</h4>
                             <p class="experience-card__company">Televinken LTD</p>
                             <p class="experience-card__daterange">September 2013 - September 2023</p>
@@ -253,7 +275,9 @@
                             <span class="tech-label">Monitoring</span>
                             <span class="tech-label">RAID</span>
                         </div>
+
                     </div>
+
 
                     <ul class="experience-card__desc">
                         <li class="experience-card__item">

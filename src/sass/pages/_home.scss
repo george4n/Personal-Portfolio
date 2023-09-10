@@ -150,6 +150,11 @@ section {
         bottom: 8rem;
     }
 
+    &__card-img {
+        width: 50%;
+        height: auto;
+    }
+
     &__heading {
         @media (max-width: 1000px) {
             padding: 2rem 0;
